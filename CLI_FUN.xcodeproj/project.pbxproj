@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EA503832AC50B5A008792A2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1EA503822AC50B5A008792A2 /* main.c */; };
+		1EA5038C2AC52392008792A2 /* hashTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5038B2AC52392008792A2 /* hashTable.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		1EA5037F2AC50B5A008792A2 /* CLI_FUN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLI_FUN; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA503822AC50B5A008792A2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1EA5038A2AC52392008792A2 /* hashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hashTable.h; sourceTree = "<group>"; };
+		1EA5038B2AC52392008792A2 /* hashTable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hashTable.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				1EA503822AC50B5A008792A2 /* main.c */,
+				1EA5038A2AC52392008792A2 /* hashTable.h */,
+				1EA5038B2AC52392008792A2 /* hashTable.c */,
 			);
 			path = CLI_FUN;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA5038C2AC52392008792A2 /* hashTable.c in Sources */,
 				1EA503832AC50B5A008792A2 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
