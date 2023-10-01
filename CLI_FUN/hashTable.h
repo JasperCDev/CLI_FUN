@@ -7,18 +7,16 @@
 
 #ifndef hashTable_h
 #define hashTable_h
-typedef struct {
-    char *key;
-    char *value;
-} KeyValuePair;
 
 typedef struct ListNode {
-    KeyValuePair data;
+    char *key;
+    char *value;
     struct ListNode *next;
 } ListNode;
 
 typedef struct {
     int size;
+    int entryCount;
     ListNode **buckets;
 } HashTable;
 
@@ -29,4 +27,12 @@ char *hashTableGet(HashTable *ht, char *key);
 int hashTableSet(HashTable *ht, char *key, char *value);
 
 void hashTableFree(HashTable *ht);
+
+void hashTableFreeKeys(HashTable *ht, char** keys);
+
+void hashTableFreeValues(HashTable *ht, char **values);
+
+char **hashTableGetKeys(HashTable *ht);
+
+char **hashTableGetValues(HashTable *ht);
 #endif /* hashTable_h */
