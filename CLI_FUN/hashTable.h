@@ -1,10 +1,3 @@
-//
-//  hashTable.h
-//  CLI_FUN
-//
-//  Created by Jasper Chauvin on 9/27/23.
-//
-
 #ifndef hashTable_h
 #define hashTable_h
 
@@ -35,4 +28,4 @@ void hashTableFreeValues(HashTable *ht, char **values);
 char **hashTableGetKeys(HashTable *ht);
 
 char **hashTableGetValues(HashTable *ht);
-#endif /* hashTable_h */
+#endif

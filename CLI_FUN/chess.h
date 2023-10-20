@@ -1,5 +1,6 @@
 #ifndef chess_h
 #define chess_h
+#include <stdbool.h>
 
 typedef struct Tile
 {
@@ -22,12 +23,12 @@ void createChessGame(ChessGame *chessGame);
 
 void chessMakeMove(ChessGame *chessGame, Tile *startTile, Tile *endTile);
 
-bool chessIsMoveValid(ChessGame *chessGame, Tile *startTile, Tile *endTile);
-
 int chessGetColumnIndex(char column);
 
 int chessGetRowIndex(int row);
 
 void printChessboard(ChessGame *chessGame);
+
+void chessRegisterMove(ChessGame *chessGame, char *playerMove);
 
 #endif
