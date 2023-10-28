@@ -1,7 +1,7 @@
 ---
 # options: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
 BasedOnStyle: LLVM
-IndentWidth: 3
+IndentWidth: 2
 # Must be 80 characters or less!
 ColumnLimit: 100
 # does (int) x instead of (int)x
